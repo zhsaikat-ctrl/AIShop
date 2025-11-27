@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ Fix: Kill injected UE sidebar overlay that blocks clicks */
+.ue-sidebar-container {
+  display: none !important;
+  pointer-events: none !important;
+  z-index: -1 !important;
+}
